@@ -12,7 +12,7 @@ $("input").keypress(function(event) {
 function addTask() {
     var task = $("#new-task").val();
 
-    $("#tasks").append("<h2>" + task + "<span id='delete'<button type='button' class='btn btn-danger'>X</button></span></h2>");
+    $("#tasks").append("<h2>" + task + "<span id='delete'<button type='button' class='btn btn-danger float-right'>X</button></span></h2>");
 
     $("#new-task").val("");
 };
