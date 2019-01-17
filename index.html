@@ -10,28 +10,40 @@
 </head>
 
 <body>
+
+        <div class="container" style="margin-top: 30px">
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Todo List</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <div class="container text-center">
+            <h1 class="display-4">Todo List Note</h1>
+
         </div>
 
-        <form>
+        <form class="text-center">
             <div class="form-group">
-                <input type="text" id="new-list" placeholder="type here">
+                <input class="text-center" type="text" id="new-list" placeholder="type here" style="width: 330px">
             </div>
-            <button id="add">Add!</button>
+            <button type="button" class="btn btn-warning">Add!</button>
         </form>
     </div>
+        </div>
 
-    <div class="card">
-        <div class="lists"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-2">
+                    <h3 class="card-header">To Do</h3>
+                    <div class="card-body text-center">
+                        <h1 id="result"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
